@@ -21,28 +21,36 @@ class __TwigTemplate_841273bc3b8aa79b0dff7424f636757abba658b63d925e1cb91d9f9edef
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b3d17e45cdd594d7a2665f454b47a9edcefb8f38e9462fc8b540904f67b06861 = $this->env->getExtension("native_profiler");
-        $__internal_b3d17e45cdd594d7a2665f454b47a9edcefb8f38e9462fc8b540904f67b06861->enter($__internal_b3d17e45cdd594d7a2665f454b47a9edcefb8f38e9462fc8b540904f67b06861_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "agent.html.twig"));
+        $__internal_71f03b3003ba9ba55f2e352ee13b4991f6732a4eb9ba98a7f96b1715a35ad61b = $this->env->getExtension("native_profiler");
+        $__internal_71f03b3003ba9ba55f2e352ee13b4991f6732a4eb9ba98a7f96b1715a35ad61b->enter($__internal_71f03b3003ba9ba55f2e352ee13b4991f6732a4eb9ba98a7f96b1715a35ad61b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "agent.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b3d17e45cdd594d7a2665f454b47a9edcefb8f38e9462fc8b540904f67b06861->leave($__internal_b3d17e45cdd594d7a2665f454b47a9edcefb8f38e9462fc8b540904f67b06861_prof);
+        $__internal_71f03b3003ba9ba55f2e352ee13b4991f6732a4eb9ba98a7f96b1715a35ad61b->leave($__internal_71f03b3003ba9ba55f2e352ee13b4991f6732a4eb9ba98a7f96b1715a35ad61b_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_518cb84287366744cad8890366c944a0cf0d88954cb4ef59f8fa46ce73a43100 = $this->env->getExtension("native_profiler");
-        $__internal_518cb84287366744cad8890366c944a0cf0d88954cb4ef59f8fa46ce73a43100->enter($__internal_518cb84287366744cad8890366c944a0cf0d88954cb4ef59f8fa46ce73a43100_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_886f05e34c9a8e97d1468ef6e7a8e9a3f9e8a0f0cc1a46e47492f97061572167 = $this->env->getExtension("native_profiler");
+        $__internal_886f05e34c9a8e97d1468ef6e7a8e9a3f9e8a0f0cc1a46e47492f97061572167->enter($__internal_886f05e34c9a8e97d1468ef6e7a8e9a3f9e8a0f0cc1a46e47492f97061572167_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
         echo "    <h1> ";
         echo twig_escape_filter($this->env, (isset($context["Yu"]) ? $context["Yu"] : $this->getContext($context, "Yu")), "html", null, true);
         echo "</h1>
+<form role=\"form\" class=\"form\">
+        <div class=\"row\">
+              <div class=\"col-sm-2 col-md-2\">
+               <button type=\"button\" class=\"btn btn-primary btn-block\" >Просмотр цен</button>\t\t
+\t\t\t   <button type=\"button\" class=\"btn btn-primary btn-block\" >Спарсить цены</button>\t\t
+\t          </div>
+</div>
+</form>
 ";
         
-        $__internal_518cb84287366744cad8890366c944a0cf0d88954cb4ef59f8fa46ce73a43100->leave($__internal_518cb84287366744cad8890366c944a0cf0d88954cb4ef59f8fa46ce73a43100_prof);
+        $__internal_886f05e34c9a8e97d1468ef6e7a8e9a3f9e8a0f0cc1a46e47492f97061572167->leave($__internal_886f05e34c9a8e97d1468ef6e7a8e9a3f9e8a0f0cc1a46e47492f97061572167_prof);
 
     }
 
@@ -66,4 +74,12 @@ class __TwigTemplate_841273bc3b8aa79b0dff7424f636757abba658b63d925e1cb91d9f9edef
 /* */
 /* {% block body %}*/
 /*     <h1> {{ Yu }}</h1>*/
+/* <form role="form" class="form">*/
+/*         <div class="row">*/
+/*               <div class="col-sm-2 col-md-2">*/
+/*                <button type="button" class="btn btn-primary btn-block" >Просмотр цен</button>		*/
+/* 			   <button type="button" class="btn btn-primary btn-block" >Спарсить цены</button>		*/
+/* 	          </div>*/
+/* </div>*/
+/* </form>*/
 /* {% endblock %}*/
