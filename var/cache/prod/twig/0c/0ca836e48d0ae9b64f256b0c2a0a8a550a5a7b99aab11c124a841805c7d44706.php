@@ -19,8 +19,8 @@ class __TwigTemplate_9a1d297f97fb82e6415600ea56c19cc54dcabfce05fa841b0fad32f53a5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c7731d181bf6244fd2c41423c29e4f3ebdb673d73e33c1b9c5672ef408a304d5 = $this->env->getExtension("native_profiler");
-        $__internal_c7731d181bf6244fd2c41423c29e4f3ebdb673d73e33c1b9c5672ef408a304d5->enter($__internal_c7731d181bf6244fd2c41423c29e4f3ebdb673d73e33c1b9c5672ef408a304d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_2f644bf3929c2a9dd3cde5c02d442451b48b52503ce9b37be5d8bf729cf1c2d4 = $this->env->getExtension("native_profiler");
+        $__internal_2f644bf3929c2a9dd3cde5c02d442451b48b52503ce9b37be5d8bf729cf1c2d4->enter($__internal_2f644bf3929c2a9dd3cde5c02d442451b48b52503ce9b37be5d8bf729cf1c2d4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -34,74 +34,100 @@ class __TwigTemplate_9a1d297f97fb82e6415600ea56c19cc54dcabfce05fa841b0fad32f53a5
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 10
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
     </head>
     <body>
         ";
-        // line 12
-        $this->displayBlock('body', $context, $blocks);
         // line 13
+        $this->displayBlock('body', $context, $blocks);
+        // line 17
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 14
-        echo "    </body>
+        // line 29
+        echo "\t\t
+    </body>
 </html>
 ";
         
-        $__internal_c7731d181bf6244fd2c41423c29e4f3ebdb673d73e33c1b9c5672ef408a304d5->leave($__internal_c7731d181bf6244fd2c41423c29e4f3ebdb673d73e33c1b9c5672ef408a304d5_prof);
+        $__internal_2f644bf3929c2a9dd3cde5c02d442451b48b52503ce9b37be5d8bf729cf1c2d4->leave($__internal_2f644bf3929c2a9dd3cde5c02d442451b48b52503ce9b37be5d8bf729cf1c2d4_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_8f3a87b8ab4a488aec68539fbe8bb8f2a8451cf037a817d0e5b1f163faa78ca7 = $this->env->getExtension("native_profiler");
-        $__internal_8f3a87b8ab4a488aec68539fbe8bb8f2a8451cf037a817d0e5b1f163faa78ca7->enter($__internal_8f3a87b8ab4a488aec68539fbe8bb8f2a8451cf037a817d0e5b1f163faa78ca7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_02eb9f30564fa9e22660a65e70ee3c684911e702da864b1be2721021c77b5228 = $this->env->getExtension("native_profiler");
+        $__internal_02eb9f30564fa9e22660a65e70ee3c684911e702da864b1be2721021c77b5228->enter($__internal_02eb9f30564fa9e22660a65e70ee3c684911e702da864b1be2721021c77b5228_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
+        echo "Программа анализа цен ТО";
         
-        $__internal_8f3a87b8ab4a488aec68539fbe8bb8f2a8451cf037a817d0e5b1f163faa78ca7->leave($__internal_8f3a87b8ab4a488aec68539fbe8bb8f2a8451cf037a817d0e5b1f163faa78ca7_prof);
+        $__internal_02eb9f30564fa9e22660a65e70ee3c684911e702da864b1be2721021c77b5228->leave($__internal_02eb9f30564fa9e22660a65e70ee3c684911e702da864b1be2721021c77b5228_prof);
 
     }
 
     // line 6
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_a960d4bcd9bfff4126c1b2004ceda4a0760f325d4408cefe4735e438afd65c02 = $this->env->getExtension("native_profiler");
-        $__internal_a960d4bcd9bfff4126c1b2004ceda4a0760f325d4408cefe4735e438afd65c02->enter($__internal_a960d4bcd9bfff4126c1b2004ceda4a0760f325d4408cefe4735e438afd65c02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_c78062a1388f333814d15a1d76b6457dd0a02fcf8ec20e48c4f98c7ada07d839 = $this->env->getExtension("native_profiler");
+        $__internal_c78062a1388f333814d15a1d76b6457dd0a02fcf8ec20e48c4f98c7ada07d839->enter($__internal_c78062a1388f333814d15a1d76b6457dd0a02fcf8ec20e48c4f98c7ada07d839_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 7
         echo "          <link href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("/css/bootstrap.css"), "html", null, true);
         echo "\" type=\"text/css\" rel=\"stylesheet\" />
+\t\t  <link href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("/css/jquery-ui.css"), "html", null, true);
+        echo "\" type=\"text/css\" rel=\"stylesheet\" />
         ";
         
-        $__internal_a960d4bcd9bfff4126c1b2004ceda4a0760f325d4408cefe4735e438afd65c02->leave($__internal_a960d4bcd9bfff4126c1b2004ceda4a0760f325d4408cefe4735e438afd65c02_prof);
-
-    }
-
-    // line 12
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_c0c226c4cd31ceed9d7d9b98b8324a01ef35c061664e34585730198f54718345 = $this->env->getExtension("native_profiler");
-        $__internal_c0c226c4cd31ceed9d7d9b98b8324a01ef35c061664e34585730198f54718345->enter($__internal_c0c226c4cd31ceed9d7d9b98b8324a01ef35c061664e34585730198f54718345_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_c0c226c4cd31ceed9d7d9b98b8324a01ef35c061664e34585730198f54718345->leave($__internal_c0c226c4cd31ceed9d7d9b98b8324a01ef35c061664e34585730198f54718345_prof);
+        $__internal_c78062a1388f333814d15a1d76b6457dd0a02fcf8ec20e48c4f98c7ada07d839->leave($__internal_c78062a1388f333814d15a1d76b6457dd0a02fcf8ec20e48c4f98c7ada07d839_prof);
 
     }
 
     // line 13
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_b9c8fc247a5eede8ac52ecd592690e30c1c2cc04f825a45e92e8018f62b3a505 = $this->env->getExtension("native_profiler");
+        $__internal_b9c8fc247a5eede8ac52ecd592690e30c1c2cc04f825a45e92e8018f62b3a505->enter($__internal_b9c8fc247a5eede8ac52ecd592690e30c1c2cc04f825a45e92e8018f62b3a505_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 14
+        echo "\t\t    <button type=\"button\" class=\"btn btn-primary btn-block\" >Просмотр цен</button>\t\t
+\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\" >Спарсить цены</button>
+\t    ";
+        
+        $__internal_b9c8fc247a5eede8ac52ecd592690e30c1c2cc04f825a45e92e8018f62b3a505->leave($__internal_b9c8fc247a5eede8ac52ecd592690e30c1c2cc04f825a45e92e8018f62b3a505_prof);
+
+    }
+
+    // line 17
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_24284ff7f47a38d5039895318f2902f5899bdb5ee5702df36fa28b9a93293c0e = $this->env->getExtension("native_profiler");
-        $__internal_24284ff7f47a38d5039895318f2902f5899bdb5ee5702df36fa28b9a93293c0e->enter($__internal_24284ff7f47a38d5039895318f2902f5899bdb5ee5702df36fa28b9a93293c0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_f24760496b0c707c764ef01f1bda3a07509c3d0a11b69043bc07cbe27f649eca = $this->env->getExtension("native_profiler");
+        $__internal_f24760496b0c707c764ef01f1bda3a07509c3d0a11b69043bc07cbe27f649eca->enter($__internal_f24760496b0c707c764ef01f1bda3a07509c3d0a11b69043bc07cbe27f649eca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
+        // line 18
+        echo "\t\t  <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("/js/jquery-1.10.2.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+\t\t  <script src=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("/js/jquery-1.10.2.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+\t\t  <script type=\"text/javascript\">
+\t\t   \$(function() {
+            \$.datepicker.setDefaults(
+             \$.extend(\$.datepicker.regional[\"ru\"])
+            );
+            \$( \".datepicker\" ).datepicker();
+           });
+\t\t  </script>
+\t\t";
         
-        $__internal_24284ff7f47a38d5039895318f2902f5899bdb5ee5702df36fa28b9a93293c0e->leave($__internal_24284ff7f47a38d5039895318f2902f5899bdb5ee5702df36fa28b9a93293c0e_prof);
+        $__internal_f24760496b0c707c764ef01f1bda3a07509c3d0a11b69043bc07cbe27f649eca->leave($__internal_f24760496b0c707c764ef01f1bda3a07509c3d0a11b69043bc07cbe27f649eca_prof);
 
     }
 
@@ -117,22 +143,38 @@ class __TwigTemplate_9a1d297f97fb82e6415600ea56c19cc54dcabfce05fa841b0fad32f53a5
 
     public function getDebugInfo()
     {
-        return array (  98 => 13,  87 => 12,  77 => 7,  71 => 6,  59 => 5,  50 => 14,  47 => 13,  45 => 12,  38 => 9,  36 => 6,  32 => 5,  26 => 1,);
+        return array (  118 => 19,  113 => 18,  107 => 17,  98 => 14,  92 => 13,  83 => 8,  78 => 7,  72 => 6,  60 => 5,  50 => 29,  47 => 17,  45 => 13,  38 => 10,  36 => 6,  32 => 5,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html>*/
 /*     <head>*/
 /*         <meta charset="UTF-8" />*/
-/*         <title>{% block title %}Welcome!{% endblock %}</title>*/
+/*         <title>{% block title %}Программа анализа цен ТО{% endblock %}</title>*/
 /*         {% block stylesheets %}*/
 /*           <link href="{{ asset('/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />*/
+/* 		  <link href="{{ asset('/css/jquery-ui.css') }}" type="text/css" rel="stylesheet" />*/
 /*         {% endblock %}*/
 /*         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />*/
 /*     </head>*/
 /*     <body>*/
-/*         {% block body %}{% endblock %}*/
-/*         {% block javascripts %}{% endblock %}*/
+/*         {% block body %}*/
+/* 		    <button type="button" class="btn btn-primary btn-block" >Просмотр цен</button>		*/
+/* 			<button type="button" class="btn btn-primary btn-block" >Спарсить цены</button>*/
+/* 	    {% endblock %}*/
+/*         {% block javascripts %}*/
+/* 		  <script src="{{ asset('/js/jquery-1.10.2.js') }}" type="text/javascript"></script>*/
+/* 		  <script src="{{ asset('/js/jquery-1.10.2.js') }}" type="text/javascript"></script>*/
+/* 		  <script type="text/javascript">*/
+/* 		   $(function() {*/
+/*             $.datepicker.setDefaults(*/
+/*              $.extend($.datepicker.regional["ru"])*/
+/*             );*/
+/*             $( ".datepicker" ).datepicker();*/
+/*            });*/
+/* 		  </script>*/
+/* 		{% endblock %}*/
+/* 		*/
 /*     </body>*/
 /* </html>*/
 /* */

@@ -2,14 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Программа анализа цен ТО{% endblock %}</title>
         {% block stylesheets %}
           <link href="{{ asset('/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+		  <link href="{{ asset('/css/jquery-ui.css') }}" type="text/css" rel="stylesheet" />
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+		    <button type="button" class="btn btn-primary btn-block" >Просмотр цен</button>		
+			<button type="button" class="btn btn-primary btn-block" >Спарсить цены</button>
+	    {% endblock %}
+        {% block javascripts %}
+		  <script src="{{ asset('/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+		  <script src="{{ asset('/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+		  <script type="text/javascript">
+		   $(function() {
+            $.datepicker.setDefaults(
+             $.extend($.datepicker.regional["ru"])
+            );
+            $( ".datepicker" ).datepicker();
+           });
+		  </script>
+		{% endblock %}
+		
     </body>
 </html>
